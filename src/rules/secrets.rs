@@ -359,6 +359,12 @@ pub static RULES: &[Rule] = &[
         "A Google OAuth client secret is written in the file."
     ),
     secret!(
+        "secret.notion-token",
+        Critical,
+        r"\bntn_[0-9]{11}[A-Za-z0-9]{35}\b",
+        "A Notion integration token is written in the file."
+    ),
+    secret!(
         "secret.mailgun-key",
         Critical,
         r"\bkey-[0-9a-f]{32}\b",

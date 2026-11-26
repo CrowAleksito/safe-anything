@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Secrets: new rule `secret.notion-token` (critical) for Notion integration tokens (`ntn_`
+  followed by 11 digits and 35 letters or digits).
 - Secrets: new rule `secret.perplexity-key` (critical) for Perplexity API keys (`pplx-`
   followed by 48 letters and digits).
 - Secrets: new rule `secret.dockerhub-token` (critical) for Docker Hub personal access tokens
