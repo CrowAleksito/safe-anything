@@ -148,6 +148,9 @@ pub fn fake(name: &str) -> String {
         // `B` is not in the Bech32 alphabet.
         "age-not-bech32" => ["AGE-SECRET-", "KEY-1", &body(57, BECH32), "B"].concat(),
         "dockerhub" => ["dckr", "_pat_", &body(26, MIXED), "-"].concat(),
+        "heroku" => ["HR", "KU-AA", &body(57, MIXED), "-"].concat(),
+        "heroku-short" => ["HR", "KU-AA", &body(57, MIXED)].concat(),
+        "heroku-no-aa" => ["HR", "KU-", &body(58, MIXED)].concat(),
         other => panic!("no fake value named {other}"),
     }
 }

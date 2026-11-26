@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Secrets: new rule `secret.heroku-key` (critical) for Heroku API keys (`HRKU-AA` followed by 58
+  letters, digits, `_` or `-`).
 - Secrets: new rule `secret.notion-token` (critical) for Notion integration tokens (`ntn_`
   followed by 11 digits and 35 letters or digits).
 - Secrets: new rule `secret.perplexity-key` (critical) for Perplexity API keys (`pplx-`
